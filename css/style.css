@@ -610,6 +610,17 @@ footer {
     align-items: flex-start;
     gap: 10px;
   }
+
+  @media (max-width: 1000px) {
+    .footer-right {
+      text-align: left;
+      margin-left: 40px;
+      margin-top: 80px;
+    }
+}  
+
+
+  
 }
 
 
