@@ -461,7 +461,6 @@ footer {
   padding-top: 80px;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .footer-left img {
@@ -612,14 +611,4 @@ footer {
   }
   
 }
-
-@media (max-width: 1000px) {
-  .footer-right {
-    text-align: left;
-    margin-left: 40px;
-    margin-top: 80px;
-  }
-}  
-
-
 
