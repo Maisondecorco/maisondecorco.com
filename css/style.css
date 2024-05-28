@@ -442,6 +442,9 @@ footer {
   .grey-bg{
     background-image: none;
   }
+  .story-line{
+    width: 20px;
+  }
 }
 
 /* Footer Style */
@@ -467,7 +470,7 @@ footer {
 }
 
 .footer-center {
-  flex: 2;
+  flex: 1;
   display: flex;
   justify-content: left;
 }
@@ -504,10 +507,11 @@ footer {
   text-decoration: none;
   color: #000000;
   font-size: 18px;
+  letter-spacing: 3.84px;
 }
 
 .footer-right {
-  flex: 1;
+  margin-right: 10%;
   text-align: left;
 }
 
@@ -520,6 +524,7 @@ footer {
   margin: 0 0 10px 0;
   font-weight: 400;
   font-size: 18px;
+  letter-spacing: 3.84px;
 }
 
 .newsletter form {
@@ -571,6 +576,7 @@ footer {
   text-decoration: none;
   color: #000000;
   font-size: 14px;
+  letter-spacing: 3.84px;
 }
 
 .footer-bottom p {
