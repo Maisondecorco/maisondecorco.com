@@ -152,7 +152,7 @@ footer {
 /* Additional styles for other sections would go here */
 
 /* Media queries for responsiveness */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   nav ul {
     display: none;
   }
@@ -424,7 +424,7 @@ footer {
 
 
 /* Media query for smaller screens */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .collection-items {
       flex-direction: column;
       align-items: center;
