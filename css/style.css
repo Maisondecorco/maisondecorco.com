@@ -593,8 +593,11 @@ footer {
   }
 
   .footer-center {
-    margin: 80px;
+    margin: 70px;
 
+  }
+  .footer-nav1{
+    padding-right: 10px;
   }
 
   .footer-right {
