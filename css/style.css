@@ -355,6 +355,7 @@ footer {
 /* Style for the services text */
 .services-text {
   margin-top: 60px;
+  max-width: 100%;
   flex: 1;
   font-family: 'Montserrat', sans-serif;
   padding: 20px;
@@ -411,7 +412,7 @@ footer {
   }
 
   .image-collage {
-    flex-direction: column; /* Stack images on smaller screens */
+    flex-direction: row; /* Stack images on smaller screens */
   }
 
   .image-branches {
