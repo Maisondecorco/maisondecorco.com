@@ -12,7 +12,8 @@ body {
   background-color: #f8f8f8;
   font-family: "Montserrat", sans-serif;
   padding-left: 5px; /* Add left padding */
-  padding-right: 10px;
+  padding-right: 10px; /* Add right padding */
+  overflow-x: hidden; 
 }
 
 /* Header styles */
@@ -145,7 +146,6 @@ nav a:hover {
 footer {
   background-color: #333;
   color: #ffffff;
-  text-align: center;
   padding: 20px 0;
 }
 
@@ -371,7 +371,7 @@ footer {
 
 .image-branches {
   /* Adjust margin to align the image as needed */
-  margin-bottom: -140px;
+  margin-bottom: -180px;
 }
 
 .explore-button {
@@ -447,7 +447,8 @@ footer {
 /* Footer Style */
 #site-footer {
   background-color: #FFFFFF;
-  padding: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
   border-top: 1px solid #EAEAEA;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -461,23 +462,23 @@ footer {
   flex-wrap: wrap;
 }
 
-.footer-left {
-  flex: 1;
+.footer-left img {
+  width: 260px;
 }
 
 .footer-center {
   flex: 2;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
-.footer-nav {
+.footer-nav1, .footer-nav2 {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   align-items: center;
 }
 
-.footer-nav ul {
+.footer-nav1 ul, .footer-nav2 ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -486,29 +487,39 @@ footer {
   gap: 10px;
 }
 
-.footer-nav ul li {
+.footer-nav1 ul li{
   flex: 1 1 50%; /* Make each list item take up half the width of the container */
-  text-align: center;
+  text-align: left;
+  padding-bottom: 5px;
 }
 
-.footer-nav ul li a {
+.footer-nav2 ul li {
+  flex: 1 1 50%; /* Make each list item take up half the width of the container */
+  text-align: left;
+  padding-right: -20px;
+  padding-bottom: 5px;
+}
+
+.footer-nav1 ul li a, .footer-nav2 ul li a {
   text-decoration: none;
   color: #000000;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 .footer-right {
   flex: 1;
-  text-align: right;
+  text-align: left;
 }
 
 .newsletter {
   margin-bottom: 10px;
+  justify-content: left;
 }
 
 .newsletter p {
   margin: 0 0 10px 0;
-  font-weight: bold;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .newsletter form {
@@ -559,7 +570,7 @@ footer {
 .footer-bottom a {
   text-decoration: none;
   color: #000000;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .footer-bottom p {
