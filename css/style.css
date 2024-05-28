@@ -450,8 +450,6 @@ footer {
 /* Footer Style */
 #site-footer {
   background-color: #FFFFFF;
-  padding-right: 80px;
-  padding-top: 80px;
   border-top: 1px solid #EAEAEA;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -460,6 +458,7 @@ footer {
 
 .footer-content {
   display: flex;
+  padding-top: 80px;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -511,8 +510,9 @@ footer {
 }
 
 .footer-right {
-  margin-right: 10%;
+  margin-right: 20%;
   text-align: left;
+  
 }
 
 .newsletter {
@@ -587,12 +587,19 @@ footer {
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items:center;
+    justify-content: center;
+    
+  }
+
+  .footer-center {
+    margin: 80px;
+
   }
 
   .footer-right {
     text-align: left;
-    margin-top: 20px;
+    margin: 40px;
   }
 
   .footer-bottom {
