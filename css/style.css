@@ -458,7 +458,7 @@ footer {
 
 .footer-content {
   display: flex;
-  padding-top: 80px;
+  padding-top: 50px;
   justify-content: space-between;
   align-items: center;
 }
@@ -477,6 +477,11 @@ footer {
   display: flex;
   flex-direction:column;
   align-items: center;
+  padding-top: 10px;
+}
+
+.footer-nav1{
+  padding-left: 50px;
 }
 
 .footer-nav1 ul, .footer-nav2 ul {
