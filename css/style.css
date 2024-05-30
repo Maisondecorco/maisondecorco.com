@@ -624,6 +624,10 @@ footer {
   .nav2-border{
     border-right: none;
   }
+  .footer-left img {
+    width: 260px;
+    margin-left: 30px;
+  }
   
 }
 
