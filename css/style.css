@@ -578,7 +578,7 @@ footer {
 
 .footer-bottom {
   display: flex;
-  align-items: center;
+  
   margin-top: 50px;
   margin-left: 40px;
 }
