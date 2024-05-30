@@ -621,6 +621,9 @@ footer {
     align-items: flex-start;
     gap: 10px;
   }
+  .nav2-border{
+    border-right: none;
+  }
   
 }
 
