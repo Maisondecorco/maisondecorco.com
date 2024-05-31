@@ -594,6 +594,10 @@ footer {
   color: #333;
 }
 
+.footer-bottom-privacy{
+  margin-left: 80px;
+}
+
 @media (max-width: 800px) {
   .footer-content {
     flex-direction: column;
@@ -603,7 +607,7 @@ footer {
 
   .footer-center {
     margin: 20px 0;
-    margin-left: 152px;
+    margin-left: 70px;
   }
 
   .footer-nav1, .footer-nav2 {
@@ -635,5 +639,9 @@ footer {
 
   .footer-bottom p {
     margin-left: 0;
+  }
+
+  .footer-bottom-privacy{
+    margin-left: 20px;
   }
 }
