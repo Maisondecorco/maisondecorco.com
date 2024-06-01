@@ -33,7 +33,7 @@ header {
   display: flex;
   justify-content: space-between; /* Distribute items evenly */
   align-items: center; /* Center vertically */
-  gap: 80px;
+  gap: 60px;
 }
 
 .logo img {
