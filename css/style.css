@@ -470,7 +470,7 @@ footer {
 
 .footer-content {
   display: flex;
-  flex-wrap:nowrap;
+  flex-wrap: wrap;
   padding-top: 20px;
   justify-content: space-between;
   align-items: center;
@@ -605,6 +605,64 @@ footer {
   margin-left: 80px;
 }
 
+@media (max-width: 1000px) {
+  .wrapper {
+    display:inline;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .footer-center {
+    margin: 20px;
+    margin-left: 30%;
+    text-align: left;
+    flex-direction:row;
+    align-items: center; /* Center items */
+    gap: 10px;
+  }
+
+  .footer-nav1, .footer-nav2 {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .footer-right {
+    margin: 20px 0;
+    text-align: left;
+    flex-direction: column;
+    align-items: center; /* Center items */
+    gap: 10px;
+    margin-left: 0;
+    text-align: left; /* Center text */
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center; /* Center items */
+    gap: 10px;
+    margin-left: 0;
+    text-align: center; /* Center text */
+  }
+
+  .nav2-border {
+    border-right: none;
+  }
+
+  .footer-left img {
+    margin-left: 0;
+  }
+
+  .footer-bottom p {
+    margin-left: 0;
+  }
+
+  .footer-bottom-privacy {
+    margin-left: 20px;
+  }
+}
 
 /* About Us Page*/
 
@@ -654,7 +712,7 @@ footer {
   height: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .our-story {
     margin-right: 20px;
     padding-top: 60px;
