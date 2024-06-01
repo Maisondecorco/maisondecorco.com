@@ -13,7 +13,7 @@ body {
   font-family: "Montserrat", sans-serif;
   padding-left: 5px; /* Add left padding */
   padding-right: 10px; /* Add right padding */
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 /* Header styles */
@@ -79,9 +79,8 @@ nav a:hover {
   position: relative;
 }
 
-
 /* Styling for Individual Sections MAX WIDTH */
-.banner-content{
+.banner-content {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -101,8 +100,7 @@ nav a:hover {
   margin: 0 auto;
 }
 
-
-/* Banner Section stylin */
+/* Banner Section styling */
 .banner-content h1 {
   font-size: 65px;
   font-family: "Meie Script", sans-serif;
@@ -156,17 +154,31 @@ footer {
   nav ul {
     display: none;
   }
-  /* Adjust styles for smaller screens */
-  /* Example: hide navigation links or change font sizes */
-}
-@media (min-width: 768px) { /* Adjust the width as needed */
   .hamburger-icon {
-    display: none;
+    display: block;
+    margin-right: 15px;
+  }
+  .menu.show-menu {
+    display:list-item;
+    background-color: #fff;
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  nav li {
+    margin: 10px 0;
+    text-align: center;
   }
 }
 
-.menu.show-menu {
-  /* Styles to display the menu (e.g., display: block) */
+@media (min-width: 768px) {
+  .hamburger-icon {
+    justify-content: right;
+    display: none;
+    cursor: pointer
+  }
 }
 
 /* about us section */
@@ -188,7 +200,7 @@ footer {
   letter-spacing: 6.8px;
 }
 
-.about-content{
+.about-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,13 +234,12 @@ footer {
   text-decoration: none;
 }
 
-.story-line{
+.story-line {
   margin-top: 56px;
   border-bottom: 1px solid #333;
 }
 
 /* Add this to your existing CSS file or create a new one */
-
 #new-collection {
   text-align: center;
   background-color: #FBFAF9;
@@ -252,20 +263,18 @@ footer {
   margin-top: -354px;
 }
 
-.grey-bg{
+.grey-bg {
   background-image: url('../images/grey_bg.png');
   display: flex;
-  width:73%;
+  width: 73%;
   margin-left: 125px;
   height: 350px;
   margin-top: 60px;
 }
 
-
 .collection-items img:last-child {
   margin-right: 0;
 }
-
 
 #new-collection p {
   color: rgba(0, 0, 0, 0.60);
@@ -279,8 +288,7 @@ footer {
   margin-top: 75px;
 }
 
-
-#new-collection a  {
+#new-collection a {
   display: flex;
   width: 129px;
   padding: 9px 10px;
@@ -317,7 +325,6 @@ footer {
   margin-top: 18px;
 }
 
-
 /* Style for the luxury service section */
 #luxury-services {
   background-color: #F5F5F5;
@@ -334,8 +341,6 @@ footer {
   border-bottom: #000;
   border-bottom: 1px solid #EAEAEA;
   /* Adjust gap to control space between images and text */
-
- 
 }
 
 /* Style for the image collage */
@@ -403,7 +408,6 @@ footer {
   letter-spacing: 6.8px;
 }
 
-
 @media (max-width: 768px) {
   .luxury-content {
     flex-direction: column;
@@ -421,30 +425,30 @@ footer {
   }
 }
 
-
-
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .collection-items {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .item {
     padding-bottom: 10px; /* Adjust spacing */
   }
+
   .item img {
     margin-top: 40px;
   }
+
   .item a {
     margin-top: 20px;
   }
 
-  .grey-bg{
+  .grey-bg {
     background-image: none;
   }
-  .story-line{
+
+  .story-line {
     width: 100%;
   }
 }
@@ -476,7 +480,7 @@ footer {
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  flex-wrap:initial;
+  flex-wrap: initial;
 }
 
 .footer-nav1, .footer-nav2 {
@@ -489,8 +493,6 @@ footer {
 .footer-nav1 {
   padding-left: 50px;
 }
-
-
 
 .nav2-border {
   border-right: 2px solid #333;
@@ -575,7 +577,7 @@ footer {
 }
 
 .footer-bottom {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
   margin-left: 40px;
@@ -594,11 +596,14 @@ footer {
   color: #333;
 }
 
-.footer-bottom-privacy{
+.footer-bottom-privacy {
   margin-left: 80px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  .wrapper {
+    display:inline;
+  }
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -606,19 +611,27 @@ footer {
   }
 
   .footer-center {
-    margin: 20px 0;
-    margin-left: 70px;
+    margin: 20px;
+    margin-left: 30%;
+    text-align: left;
+    flex-direction:row;
+    align-items: center; /* Center items */
+    gap: 10px;
   }
 
   .footer-nav1, .footer-nav2 {
     padding-left: 0;
-    align-items: center; /* Center items in nav */
+    align-items: center;
   }
 
   .footer-right {
     margin: 20px 0;
     text-align: left;
-    margin-right: 50px;
+    flex-direction: column;
+    align-items: center; /* Center items */
+    gap: 10px;
+    margin-left: 0;
+    text-align: left; /* Center text */
   }
 
   .footer-bottom {
@@ -641,7 +654,7 @@ footer {
     margin-left: 0;
   }
 
-  .footer-bottom-privacy{
+  .footer-bottom-privacy {
     margin-left: 20px;
   }
 }
