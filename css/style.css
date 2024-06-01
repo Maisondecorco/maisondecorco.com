@@ -744,6 +744,8 @@ footer {
   .about-image img {
     max-width: 100%;
     height: auto;
-    padding: 5% 5%;
+    padding: 5%;
+    margin-right: 5px;
+    align-content: flex-start;
   }
 }
