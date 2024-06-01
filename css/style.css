@@ -235,7 +235,7 @@ footer {
   text-decoration: none;
 }
 
-.story-line {
+.story-line-1 {
   margin-top: 56px;
   margin-left: 20%;
   margin-right: 20%;
@@ -412,6 +412,13 @@ footer {
   letter-spacing: 6.8px;
 }
 
+.story-line-2 {
+  margin-top: 56px;
+  align-self:center;
+  border-bottom: 2px solid #333;
+}
+
+
 @media (max-width: 768px) {
   .luxury-content {
     flex-direction: column;
@@ -452,7 +459,7 @@ footer {
     background-image: none;
   }
 
-  .story-line {
+  .story-line-1 {
     margin-left: 20%;
     margin-right: 20%;
   }
