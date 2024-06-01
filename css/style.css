@@ -237,7 +237,10 @@ footer {
 
 .story-line {
   margin-top: 56px;
-  border-bottom: 1px solid #333;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-self:center;
+  border-bottom: 2px solid #333;
 }
 
 /* Add this to your existing CSS file or create a new one */
