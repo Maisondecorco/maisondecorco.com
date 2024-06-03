@@ -52,16 +52,24 @@
   margin-bottom: 32px;
 }
 .inTouch-btn {
-  display: flex;
   width: 222px;
   padding: 10px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 20px;
   background: #dcdbd9;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
   color: #000;
-  text-decoration: none;
+}
+.ourservices {
+  font-size: 44px;
+  font-weight: 400;
+}
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
 }
 @media (max-width: 768px) {
   .servicesCon {
