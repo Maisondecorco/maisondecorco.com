@@ -1,66 +1,56 @@
-.servicetag {
-  font-family: "Montserrat", sans-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
-  letter-spacing: 6.8px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
 .container {
-  padding: 4px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-  gap: 6px; /* Space between grid items */
-  align-items: center; /* Align items vertically in the center */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 16px;
 }
 
-@media (max-width: 600px) {
-  .container {
-    grid-template-columns: 1fr; /* Single column layout on small screens */
-  }
-}
-
-.servicetag {
+.servicesCon {
+  flex: 1 1 30%; /* Flex-grow: 1, flex-shrink: 1, flex-basis: 30% */
+  box-sizing: border-box;
   text-align: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-.imagediv {
-  height: 444px;
-  width: 100%;
-}
-.responsive-img {
-  max-width: 300px;
-  max-height: auto;
-  object-fit: cover; /* This will ensure the image covers the entire div */
-}
-
-.subText {
-  font-family: "Montserrat", sans-serif; /* or a similar font */
   background-color: #e9e9e9;
 }
-.sectiondiv {
-  border: 1px solid;
-  height: 100%;
+
+.img-container {
   width: 100%;
+  height: 400px; /* Set the height as needed */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h4 {
-  font-family: Montserrat;
-  font-size: 19px;
-  font-weight: 400;
-  line-height: 29.26px;
-  letter-spacing: 0.12em;
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+.subtext {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 6px;
+}
+.textheader {
+  font-size: 24px;
+  font-weight: 500;
   text-align: center;
 }
-
-p {
-  text-align: center;
+.servicetag {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
-
+.inTouch-btndiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .inTouch-btn {
   display: flex;
   width: 222px;
@@ -72,12 +62,9 @@ p {
   background: #dcdbd9;
   color: #000;
   text-decoration: none;
-  margin-left: 518px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-right: 518px;
-  color: #000000;
-  font-size: 16px;
-  border: none;
-  font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 768px) {
+  .servicesCon {
+    flex: 1 1 100%; /* Flex-basis: 100% for stacking */
+  }
 }
