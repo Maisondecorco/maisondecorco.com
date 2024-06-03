@@ -12,7 +12,7 @@ body {
   background-color: #f8f8f8;
   font-family: "Montserrat", sans-serif;
   padding-left: 5px; /* Add left padding */
-  padding-right: 10px; /* Add right padding */
+  padding-right: 5px; /* Add right padding */
   overflow-x: hidden;
 }
 
@@ -70,7 +70,7 @@ nav a:hover {
 
 /* Banner section styles */
 #banner {
-  background-image: url('../images/banner.png');
+  background-image: url("../images/banner.png");
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -134,7 +134,7 @@ nav a:hover {
   align-items: center;
   gap: 10px;
   border-radius: 20px;
-  background: #DCDBD9;
+  background: #dcdbd9;
 }
 
 .banner-content button:hover {
@@ -160,7 +160,7 @@ footer {
     margin-right: 15px;
   }
   .menu.show-menu {
-    display:list-item;
+    display: list-item;
     background-color: #fff;
     position: relative;
     top: 60px;
@@ -178,13 +178,13 @@ footer {
   .hamburger-icon {
     justify-content: right;
     display: none;
-    cursor: pointer
+    cursor: pointer;
   }
 }
 
 /* homepage about us section */
 #about-us {
-  background-color: #F6F6F5; /* sets background color to light gray */
+  background-color: #f6f6f5; /* sets background color to light gray */
   padding: 100px 0;
   text-align: center;
 }
@@ -193,7 +193,7 @@ footer {
 #about-us h2 {
   color: #000;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 200;
@@ -210,8 +210,9 @@ footer {
 }
 
 /* about us section paragraph */
-#about-us p, .services-text p {
-  font-family: 'Montserrat', sans-serif; /* or a similar font */
+#about-us p,
+.services-text p {
+  font-family: "Montserrat", sans-serif; /* or a similar font */
   margin-bottom: 10px;
   font-size: 14px;
   color: #000;
@@ -230,7 +231,7 @@ footer {
   align-items: center;
   gap: 10px;
   border-radius: 20px;
-  background: #DCDBD9;
+  background: #dcdbd9;
   color: #000;
   text-decoration: none;
 }
@@ -239,21 +240,21 @@ footer {
   margin-top: 56px;
   margin-left: 20%;
   margin-right: 20%;
-  align-self:center;
+  align-self: center;
   border-bottom: 2px solid #333;
 }
 
 /* Add this to your existing CSS file or create a new one */
 #new-collection {
   text-align: center;
-  background-color: #FBFAF9;
+  background-color: #fbfaf9;
   padding: 50px 0;
 }
 
 #new-collection h2 {
   color: #000;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 200;
@@ -268,7 +269,7 @@ footer {
 }
 
 .grey-bg {
-  background-image: url('../images/grey_bg.png');
+  background-image: url("../images/grey_bg.png");
   display: flex;
   width: 73%;
   margin-left: 125px;
@@ -283,7 +284,7 @@ footer {
 #new-collection p {
   color: #000;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -300,7 +301,7 @@ footer {
   align-items: center;
   gap: 10px;
   border-radius: 20px;
-  background: #7D7D7D;
+  background: #7d7d7d;
   color: #fff;
   text-decoration: none;
 }
@@ -319,11 +320,11 @@ footer {
 }
 
 .item a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
-  background: #7D7D7D;
+  background: #7d7d7d;
   padding: 9px 10px;
   border-radius: 15px;
   margin-top: 18px;
@@ -331,7 +332,7 @@ footer {
 
 /* Style for the luxury service section */
 #luxury-services {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding-top: 20px;
 }
 
@@ -343,7 +344,7 @@ footer {
   justify-content: space-between;
   gap: 10px;
   border-bottom: #000;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #eaeaea;
   /* Adjust gap to control space between images and text */
 }
 
@@ -364,14 +365,13 @@ footer {
 
 /* Style for the services text */
 .services-text {
-  margin-top: 60px;
-  max-width: 100%;
+  margin-top: 30px;
+  width: 100%;
   flex: 1;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 20px;
   margin-right: 5%;
   text-align: center;
-  justify-content: left;
 }
 
 .image-bowl {
@@ -385,8 +385,13 @@ footer {
   margin-bottom: -180px;
 }
 
+.image-resize {
+  width: 489.27px;
+  height: 444px;
+}
+
 .explore-button {
-  background-color: #DCDBD9;
+  background-color: #dcdbd9;
   color: #000;
   text-decoration: none;
   margin-top: 20px;
@@ -398,13 +403,22 @@ footer {
   gap: 10px;
   border-radius: 20px;
 }
-
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid;
+}
+.flex-container img {
+  height: auto;
+  border: 1px solid;
+}
 /* about us section heading */
 .services-text h2 {
   color: #000;
   padding-bottom: 20px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 250;
@@ -414,17 +428,13 @@ footer {
 
 .story-line-2 {
   margin-top: 56px;
-  align-self:center;
+  align-self: center;
   border-bottom: 2px solid #333;
 }
-
 
 @media (max-width: 768px) {
   .luxury-content {
     flex-direction: column;
-  }
-
-  .services-text {
   }
 
   .image-collage {
@@ -467,9 +477,9 @@ footer {
 
 /* Footer Style */
 #site-footer {
-  background-color: #FFFFFF;
-  border-top: 1px solid #EAEAEA;
-  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  border-top: 1px solid #eaeaea;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #000000;
   padding: 20px;
@@ -495,7 +505,8 @@ footer {
   flex-wrap: initial;
 }
 
-.footer-nav1, .footer-nav2 {
+.footer-nav1,
+.footer-nav2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -513,7 +524,8 @@ footer {
   margin-right: 100px;
 }
 
-.footer-nav1 ul, .footer-nav2 ul {
+.footer-nav1 ul,
+.footer-nav2 ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -522,13 +534,15 @@ footer {
   gap: 10px;
 }
 
-.footer-nav1 ul li, .footer-nav2 ul li {
+.footer-nav1 ul li,
+.footer-nav2 ul li {
   flex: 1 1 50%; /* Make each list item take up half the width of the container */
   text-align: left;
   padding-bottom: 5px;
 }
 
-.footer-nav1 ul li a, .footer-nav2 ul li a {
+.footer-nav1 ul li a,
+.footer-nav2 ul li a {
   text-decoration: none;
   color: #000000;
   font-size: 18px;
@@ -559,7 +573,7 @@ footer {
 
 .newsletter input[type="email"] {
   padding: 8px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   border-radius: 5px;
   margin-right: 10px;
 }
@@ -567,7 +581,7 @@ footer {
 .newsletter button {
   padding: 8px 12px;
   border: none;
-  background-color: #DCDBD9;
+  background-color: #dcdbd9;
   color: #000000;
   cursor: pointer;
   border-radius: 5px;
@@ -614,7 +628,7 @@ footer {
 
 @media (max-width: 1000px) {
   .wrapper {
-    display:inline;
+    display: inline;
   }
   .footer-content {
     flex-direction: column;
@@ -626,12 +640,13 @@ footer {
     margin: 20px;
     margin-left: 30%;
     text-align: left;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center; /* Center items */
     gap: 10px;
   }
 
-  .footer-nav1, .footer-nav2 {
+  .footer-nav1,
+  .footer-nav2 {
     padding-left: 0;
     align-items: center;
   }
@@ -673,23 +688,21 @@ footer {
 
 /* About Us Page*/
 
-
 .about-page {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .our-story {
   flex: 1;
-  padding-left: 4em;;
+  padding-left: 4em;
 }
 
 .our-story h2 {
   color: #000;
   text-align: left;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 200;
@@ -698,7 +711,7 @@ footer {
 }
 
 .our-story p {
-  font-family: 'Montserrat', sans-serif; /* or a similar font */
+  font-family: "Montserrat", sans-serif; /* or a similar font */
   margin-bottom: 10px;
   font-size: 12px;
   color: #000;
@@ -732,7 +745,7 @@ footer {
     flex-direction: column;
   }
   .our-story p {
-    font-family: 'Montserrat', sans-serif; /* or a similar font */
+    font-family: "Montserrat", sans-serif; /* or a similar font */
     margin-bottom: 10px;
     font-size: 12px;
     color: #000;
@@ -749,3 +762,5 @@ footer {
     align-content: flex-start;
   }
 }
+
+/* services section */
