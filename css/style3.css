@@ -19,10 +19,14 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 @media (max-width: 768px) {
   .main-cont {
     display: block; /* Revert to block layout */
+    margin-left: 6px;
+    margin-right: 6px;
   }
 }
 .inputdiv {
