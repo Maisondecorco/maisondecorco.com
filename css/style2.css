@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
-  gap: 16px;
+  gap: 60px;
 }
 
 .servicesCon {
@@ -34,15 +34,18 @@
   gap: 6px;
 }
 .textheader {
-  font-size: 24px;
-  font-weight: 500;
+  color: #333;
+  font-size: 20px;
+  font-weight: 300;
   text-align: center;
+  padding-top: 20px;
+  letter-spacing: 6px;
 }
 .servicetag {
   display: flex;
   justify-content: center;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 .inTouch-btndiv {
   display: flex;
@@ -62,14 +65,22 @@
   color: #000;
 }
 .ourservices {
-  font-size: 44px;
-  font-weight: 400;
+  color: #000;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 250;
+  line-height: normal;
+  letter-spacing: 6.8px;
 }
 .text {
-  font-weight: 500;
+  font-weight: 300;
   font-size: 16px;
   align-items: center;
   text-align: center;
+  padding-bottom: 20px;
+  letter-spacing: 2.4px;
 }
 @media (max-width: 768px) {
   .servicesCon {
