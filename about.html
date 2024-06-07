@@ -2,11 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>Maison Decor About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HELP</title>
     <script
       src="https://kit.fontawesome.com/91edf554b7.js"
       crossorigin="anonymous"
@@ -35,7 +32,56 @@
       href="https://fonts.googleapis.com/css2?family=Meie+Script:wght@400&display=swap"
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      .hamburger-icon {
+        display: none;
+      }
+
+      .side-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+        background-color: white;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        padding-top: 60px; /* Adjust according to your header height */
+      }
+
+      @media (max-width: 768px) {
+        .nav-container nav {
+          display: none;
+        }
+
+        .hamburger-icon {
+          display: block;
+        }
+
+        .side-menu.active {
+          display: block;
+        }
+
+        .side-menu ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .side-menu ul li {
+          padding: 15px 20px;
+          border-bottom: 1px solid #ccc;
+        }
+
+        .side-menu ul li a {
+          text-decoration: none;
+          color: black;
+          display: block;
+        }
+      }
+    </style>
   </head>
+
   <body>
     <header>
       <div class="wrapper">
@@ -58,11 +104,27 @@
             </ul>
           </nav>
           <div class="hamburger-icon">
-            <a href="#" class="fas fa-bars" style="color: black"></a>
+            <a
+              href="#"
+              id="hamburger-menu"
+              class="fas fa-bars"
+              style="color: black"
+            ></a>
           </div>
         </div>
       </div>
     </header>
+
+    <div class="side-menu" id="side-menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="https://store.maisondecorco.com">SHOP</a></li>
+        <li><a href="contact-us.html">CONTACT</a></li>
+        <li><a href="help.html">HELP</a></li>
+      </ul>
+    </div>
 
     <main>
       <section>
@@ -155,11 +217,11 @@
     </footer>
 
     <script>
-      const hamburgerIcon = document.querySelector(".hamburger-icon");
-      const menus = document.querySelectorAll(".menu");
-
-      hamburgerIcon.addEventListener("click", () => {
-        menus.forEach((menu) => menu.classList.toggle("show-menu"));
+      $(document).ready(function () {
+        $("#hamburger-menu").click(function (e) {
+          e.preventDefault();
+          $("#side-menu").toggleClass("active");
+        });
       });
     </script>
   </body>
