@@ -144,14 +144,14 @@
                 WE LOOK FORWARD TO HEARING FROM YOU!
               </p>
               <div class="gettext3">
-               <p>OPNENING HOURES</p>
-               <p> mon - sat (9:00 AM - 6:00PM)</p>
+               <p>OPENING HOURS</p>
+               <p> MON - SAT (9:00 AM - 6:00PM)</p>
               </div>
 
               <div class="gettext3">
-                <p> Email: info@maisondecor.com </p>
+                <p> Email: info@maisondecorco.com </p>
                 <p>Call: (+234) 803 114 0154 </p>
-               <p> 30B Ammah Plaza Abuja</p>
+               <p> 308 Ammah Plaza Abuja</p>
               </p>
               </div>
           </div>
@@ -167,56 +167,61 @@
           <form action="post" class="post">
             <div class="inputdiv">
               <div class="labelinput">
-                <label for="" class="label">First Name</label>
+                <label for="" class="label">First Name*</label>
                 <input
                   type="text"
                   class="input"
                   name=""
                   id=""
                   placeholder="Enter first name"
+                  required
                 />
               </div>
 
               <div class="labelinput">
-                <label for="" class="label">Last Name</label>
+                <label for="" class="label">Last Name*</label>
                 <input
                   type="text"
                   name=""
                   id=""
                   class="input"
                   placeholder="Enter last name"
+                  required
                 />
               </div>
             </div>
 
             <div class="inputdiv">
               <div class="labelinput">
-                <label class="label">Email</label>
+                <label class="label">Email*</label>
                 <input
                   type="email"
                   name=""
                   class="input"
                   id=""
                   placeholder="Enter email"
+                  required
                 />
               </div>
               <div class="labelinput">
-                <label class="label">Project type</label>
+                <label class="label">Project type*</label>
                 <select
-                  type="text"
-                  class="input"
-                  name=""
-                  id=""
-                  placeholder="Project type"
+                    class="input"
+                    name="projectType"
+                    id="projectType"
+                    required
                 >
-                  <option>select one</option>
-                  <option>option 2</option>
+                    <option value="Project type" disabled selected>Project type</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
                 </select>
-              </div>
+            </div>
+            
             </div>
 
             <div class="labelinput">
-              <label class="label">Message</label>
+              <label class="label">Message*</label>
               <textarea
                 type="text"
                 class="textarea"

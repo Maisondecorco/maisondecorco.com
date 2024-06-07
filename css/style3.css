@@ -1,5 +1,12 @@
 /** contact us section **/
 h1 {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 6.8px;
 }
 
 .contact-us {
@@ -18,9 +25,9 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  margin-left: 20px;
-  margin-right: 20px;
+  gap: 0;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 @media (max-width: 768px) {
   .main-cont {
@@ -58,8 +65,13 @@ h1 {
 .labelinput {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
   width: 100%;
+}
+
+.labelinput textarea {
+  gap: 36px;
+  
 }
 .input {
   border: none;
@@ -69,16 +81,17 @@ h1 {
   outline: none;
 }
 .label {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 300;
+  
 }
 .textarea {
-  padding: 16px;
+  padding: 50px 16px;
   border: none;
   border-bottom: 1px solid;
   outline: none;
   background: none;
-  margin-bottom: 64px;
+  margin-bottom: 84px;
 }
 .form {
   width: 100%;
@@ -105,19 +118,19 @@ h1 {
 }
 .gettext {
   font-weight: 400;
-  font-size: 28px;
+  font-size: 20px;
 }
 .gettext2 {
   font-weight: 200;
-  font-size: 12px;
-  line-height: 2.5;
+  font-size: 11px;
+  line-height: 2.3;
   letter-spacing: 3.8px;
 }
 .gettext3 {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-bottom: 6px;
+  gap: 0;
+  margin-bottom: 25px;
   font-size: 12px;
   line-height: 2.5;
   letter-spacing: 3.8px;
@@ -131,4 +144,5 @@ h1 {
 }
 .outer-container {
   max-height: 94px;
+  max-width: 80%;
 }
