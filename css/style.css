@@ -606,7 +606,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-left: 40px;
+  justify-content: space-between;
 }
 
 .footer-bottom a {
@@ -620,10 +620,6 @@ footer {
   margin-left: auto;
   font-size: 12px;
   color: #333;
-}
-
-.footer-bottom-privacy {
-  margin-left: 80px;
 }
 
 @media (max-width: 1000px) {
@@ -662,7 +658,6 @@ footer {
   }
 
   .footer-bottom {
-    flex-direction: column;
     align-items: center; /* Center items */
     gap: 10px;
     margin-left: 0;
@@ -763,4 +758,10 @@ footer {
   }
 }
 
-/* services section */
+/* foote adjustments  */
+
+@media (max-width: 700) {
+  .footer-bottom a {
+    margin-left: 19px;
+  }
+}
