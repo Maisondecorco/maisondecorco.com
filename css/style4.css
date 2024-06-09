@@ -22,15 +22,7 @@
   transform: translate(-50%, -50%);
 }
 
-p {
-  width: 100%; /* or set a specific width like 80% or 500px */
-  max-width: 500px; /* Optional: set a maximum width */
-  margin: 0 auto; /* Center align within the parent if not taking full width */
-  text-align: center;
-  line-height: 50px;
-  margin-top: 43px;
-  letter-spacing: 2px; /* Adjust the spacing between characters */
-}
+
 .helplink {
   display: flex;
   flex-direction: column;
@@ -40,8 +32,8 @@ p {
   gap: 8px;
 }
 
-a {
+.helplink a {
   text-decoration: none; /* Optional: remove underline from links */
   color: inherit; /* Optional: inherit text color */
-  line-height: 1.5; /* Adjust line height to add more space within the links if needed */
+  line-height: 2.3; /* Adjust line height to add more space within the links if needed */
 }
