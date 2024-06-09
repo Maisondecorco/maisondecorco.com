@@ -626,6 +626,37 @@ footer {
   margin-left: 80px;
 }
 
+@media (max-width: 768px) {
+  .footer-content{
+    display: block;
+    max-width: fit-content;
+  }
+  .footer-center {
+    justify-content:space-between;
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+  .footer-nav1 {
+    padding-left: 0;
+  }
+  .footer-nav1, .footer-nav2 {
+    padding-top: 0;
+  }
+
+  .nav2-border {
+    border-right: none;
+    height: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .footer-right {
+    margin-left: 18%;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+}
 
 /* About Us Page*/
 
