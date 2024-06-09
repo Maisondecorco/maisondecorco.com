@@ -110,6 +110,13 @@ h1 {
   .get-in-touch {
     text-align: center; /* Revert to block layout */
   }
+  .inputdiv {
+    display:block;
+  }
+
+  .labelinput {
+    margin-bottom: 20px;
+  }
 }
 .get-in-touch-div {
   display: flex;
