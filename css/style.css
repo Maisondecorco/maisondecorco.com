@@ -684,6 +684,32 @@ footer {
 
 }
 
+@media (max-width: 1188px) {
+  .footer-right {
+    margin-right: 0;
+    text-align: left;
+  }
+  .nav2-border {
+    border-right: none;
+    height: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1040px) {
+  .footer-right {
+    margin-left: 90px;
+    text-align: left;
+  }
+  .nav2-border {
+    border-right: none;
+    height: 0;
+    margin-top: 0;
+    margin-right: 0;
+  }
+}  
+
 /* About Us Page*/
 
 .about-page {
