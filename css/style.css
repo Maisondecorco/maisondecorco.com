@@ -639,6 +639,10 @@ footer {
     display: block;
     max-width: fit-content;
   }
+  .footer-left img {
+    width: 260px;
+    margin: 0 50px 20px 30px;
+}
   .footer-center {
     justify-content:space-between;
     padding-left: 25px;
