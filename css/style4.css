@@ -40,7 +40,14 @@
 
 @media (max-width: 1188px) {
   .help-content {
-    height: 1500px;
+    height: 1000px;
+  }
+  
+}  
+
+@media (max-width: 768px) {
+  .help-content {
+    height: 500px;
   }
   
 }  
