@@ -40,8 +40,6 @@ h1 {
 @media (max-width: 1188px) {
   .main-cont {
     display: block; /* Revert to block layout */
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 25%;
   }
