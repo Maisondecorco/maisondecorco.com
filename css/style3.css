@@ -36,6 +36,16 @@ h1 {
     margin-right: 6px;
   }
 }
+
+@media (max-width: 1188px) {
+  .main-cont {
+    display: block; /* Revert to block layout */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+}
+
 .inputdiv {
   display: flex;
   justify-content: space-between;
