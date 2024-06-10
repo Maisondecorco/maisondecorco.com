@@ -43,7 +43,7 @@
     height: 1000px;
   }
   .blank-section{
-    margin-bottom: 30%;
+    margin-bottom: 40%;
   }
   
 }  
@@ -51,6 +51,9 @@
 @media (max-width: 768px) {
   .help-content {
     height: 500px;
+  }
+  .blank-section{
+    margin-bottom: 0;
   }
   
 }  
