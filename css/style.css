@@ -663,6 +663,8 @@ footer {
   }
 
   .footer-right {
+    margin-left: 100px;
+    text-align: left;
     margin-left: 18%;
     margin-top: 30px;
     text-align: left;
@@ -696,19 +698,6 @@ footer {
     margin-right: 0;
   }
 }
-
-@media (max-width: 1040px) {
-  .footer-right {
-    margin-left: 90px;
-    text-align: left;
-  }
-  .nav2-border {
-    border-right: none;
-    height: 0;
-    margin-top: 0;
-    margin-right: 0;
-  }
-}  
 
 /* About Us Page*/
 
