@@ -54,6 +54,7 @@
     </header>
 
     <div class="side-menu" id="side-menu">
+      <span class="close-btn" id="close-btn">&times;</span>
       <ul>
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -185,6 +186,11 @@
           e.preventDefault();
           $("#side-menu").toggleClass("active");
         });
+        $("#close-btn").click(function (e) {
+              e.preventDefault();
+              $("#side-menu").removeClass("active");
+          });
+
       });
 
       document.getElementById('contact-form').addEventListener('submit', handleSubmit);
