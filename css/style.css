@@ -720,6 +720,12 @@ footer {
     margin-left: 0;
   }
 
+  .newsletter {
+    margin-bottom: 10px;
+    justify-content: left;
+    padding-right: 65%;
+  }
+
 }
 
 @media (max-width: 1188px) {
