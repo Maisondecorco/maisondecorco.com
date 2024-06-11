@@ -148,39 +148,58 @@ footer {
   padding: 20px 0;
 }
 
-/* Additional styles for other sections would go here */
+.hamburger-icon {
+  display: none;
+}
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  nav ul {
+.side-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding-top: 60px; /* Adjust according to your header height */
+}
+
+@media (max-width: 768px) {
+  .nav-container nav {
     display: none;
   }
+
   .hamburger-icon {
     display: block;
-    margin-right: 15px;
   }
-  .menu.show-menu {
-    display: list-item;
-    background-color: #fff;
-    position: relative;
-    top: 60px;
-    left: 0;
-    width: 30%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .side-menu.active {
+    display: block;
   }
-  nav li {
-    margin: 10px 0;
-    text-align: center;
+
+  .side-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .side-menu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .side-menu ul li:hover {
+    background-color: silver;
+  }
+
+  .side-menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
   }
 }
 
-@media (min-width: 768px) {
-  .hamburger-icon {
-    justify-content: right;
-    display: none;
-    cursor: pointer;
-  }
-}
+
 
 /* homepage about us section */
 #about-us {
