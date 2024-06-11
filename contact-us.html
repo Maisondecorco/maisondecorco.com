@@ -4,34 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MAISON DECOR - CONTACT US</title>
-    <script
-      src="https://kit.fontawesome.com/91edf554b7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="shortcut icon"
-      href="images/logo-single.png"
-      type="image/x-icon"
-    />
+    <script src="https://kit.fontawesome.com/91edf554b7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/logo-single.png" type="image/x-icon" />
     <link rel="icon" href="images/logo-single.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style3.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400&display=swap"
-    />
-    <link
-      href="https://fonts.cdnfonts.com/css/best-signature-font"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Meie+Script:wght@400&display=swap"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400&display=swap" />
+    <link href="https://fonts.cdnfonts.com/css/best-signature-font" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Meie+Script:wght@400&display=swap" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
       .hamburger-icon {
@@ -105,12 +86,7 @@
             </ul>
           </nav>
           <div class="hamburger-icon">
-            <a
-              href="#"
-              id="hamburger-menu"
-              class="fas fa-bars"
-              style="color: black"
-            ></a>
+            <a href="#" id="hamburger-menu" class="fas fa-bars" style="color: black"></a>
           </div>
         </div>
       </div>
@@ -152,86 +128,48 @@
                 <p> Email: info@maisondecorco.com </p>
                 <p>Call: (+234) 803 114 0154 </p>
                <p> 308 Ammah Plaza Abuja</p>
-              </p>
               </div>
           </div>
 
-            <div class="outer-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.720232066697!2d7.420498974859478!3d9.089230790974556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e754935fbbe2b%3A0x5b6574d51a1bd03d!2sAmmah%20plaza!5e0!3m2!1sen!2sng!4v1713026097023!5m2!1sen!2sng" width="100%" height="94px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+          <div class="outer-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.720232066697!2d7.420498974859478!3d9.089230790974556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e754935fbbe2b%3A0x5b6574d51a1bd03d!2sAmmah%20plaza!5e0!3m2!1sen!2sng!4v1713026097023!5m2!1sen!2sng" width="100%" height="94px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
-
-
         <div class="form">
-          <form action="post" class="post">
+          <form method="post" class="post" action="https://s2tfb84fdd.execute-api.us-east-1.amazonaws.com/default/contactFormHandler" id="contact-form">
             <div class="inputdiv">
               <div class="labelinput">
-                <label for="" class="label">First Name*</label>
-                <input
-                  type="text"
-                  class="input"
-                  name=""
-                  id=""
-                  placeholder="Enter first name"
-                  required
-                />
+                <label for="firstname" class="label">First Name*</label>
+                <input type="text" class="input" name="firstname" id="firstname" placeholder="Enter first name" required />
               </div>
 
               <div class="labelinput">
-                <label for="" class="label">Last Name*</label>
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  class="input"
-                  placeholder="Enter last name"
-                  required
-                />
+                <label for="lastname" class="label">Last Name*</label>
+                <input type="text" name="lastname" id="lastname" class="input" placeholder="Enter last name" required />
               </div>
             </div>
 
             <div class="inputdiv">
               <div class="labelinput">
-                <label class="label">Email*</label>
-                <input
-                  type="email"
-                  name=""
-                  class="input"
-                  id=""
-                  placeholder="Enter email"
-                  required
-                />
+                <label for="email" class="label">Email*</label>
+                <input type="email" name="email" class="input" id="email" placeholder="Enter email" required />
               </div>
               <div class="labelinput">
-                <label class="label">Project type*</label>
-                <input
-                  type="text"
-                  name=""
-                  class="input"
-                  id=""
-                  placeholder="Project type"
-                  required
-                />
-            </div>
-            
+                <label for="project" class="label">Project type*</label>
+                <input type="text" name="project" class="input" id="project" placeholder="Project type" required />
+              </div>
             </div>
 
             <div class="labelinput">
-              <label class="label">Message*</label>
-              <textarea
-                type="text"
-                class="textarea"
-                name=""
-                id=""
-                placeholder="Message"
-              ></textarea>
+              <label for="message" class="label">Message*</label>
+              <textarea class="textarea" name="message" id="message" placeholder="Message"></textarea>
             </div>
 
-            <button class="button">
-              Send
-            </button>
+            <button class="button">Send</button>
           </form>
+          <div id="loading-indicator" style="display:none;">Loading...</div>
+          <div id="success-message" style="display:none;">Thank you for contacting us. We will get back to you soon!</div>
         </div>
       </div>
     </section>  
@@ -290,6 +228,73 @@
           $("#side-menu").toggleClass("active");
         });
       });
+
+      document.getElementById('contact-form').addEventListener('submit', handleSubmit);
+
+      function handleSubmit(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Hide the form
+        document.getElementById('contact-form').style.display = 'none';
+
+        // Show loading indicator
+        document.getElementById('loading-indicator').style.display = 'block';
+
+        // Get form data
+        const firstname = document.getElementById('firstname').value;
+        const lastname = document.getElementById('lastname').value;
+        const email = document.getElementById('email').value;
+        const project = document.getElementById('project').value;
+        const message = document.getElementById('message').value;
+
+        // Prepare data for sending
+        const formData = {
+          firstname,
+          lastname,
+          email,
+          project,
+          message,
+        };
+
+        // Send data using Fetch API
+        fetch('https://s2tfb84fdd.execute-api.us-east-1.amazonaws.com/default/contactFormHandler', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData),
+        })
+        .then(response => {
+          if (response.status === 200) {
+            console.log('Success:', response.statusText);
+
+            // Hide loading indicator
+            document.getElementById('loading-indicator').style.display = 'none';
+
+            // Show success message
+            document.getElementById('success-message').style.display = 'block';
+
+            // Clear the form
+            document.getElementById('contact-form').reset();
+
+            // Show the form again
+            document.getElementById('contact-form').style.display = 'block';
+          } else {
+            console.error('Error:', response.statusText);
+
+            // Hide loading indicator
+            document.getElementById('loading-indicator').style.display = 'none';
+
+            // Show error message (optional)
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+
+          // Hide loading indicator
+          document.getElementById('loading-indicator').style.display = 'none';
+
+          // Show error message (optional)
+        });
+      }
     </script>
   </body>
 </html>
